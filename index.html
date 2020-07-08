@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This Interior</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__container container">
+        <a href="./index.html" class="nav__brand">THIS INTERIOR</a>
+
+        <div class="nav__menu-wrapper hide-on-mobile">
+          <a href="./index.html" class="nav__item active">Home</a>
+          <a href="#!" class="nav__item">Collection</a>
+          <a href="#!" class="nav__item">About</a>
+          <a href="#!" class="nav__item">Contact</a>
+        </div>
+        <div class="nav__burger-button">
+          <i class="material-icons">menu</i>
+        </div>
+      </div>
+      <div class="overlay-menu hide-on-desktop">
+        <a href="./index.html" class="overlay-menu__item active">Home</a>
+        <a href="#!" class="overlay-menu__item">Collection</a>
+        <a href="#!" class="overlay-menu__item">About</a>
+        <a href="#!" class="overlay-menu__item">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero__container container">
+          <div>
+            <h1 class="heading--one text-white">Modern Interior</h1>
+            <p class="font-light text-white">
+              A full-Service residential & commercial interior design and
+              staging company offering professional organizing & eco-services.
+            </p>
+            <a
+              href="#!"
+              role="button"
+              class="button button--primary button--has-right-icon"
+            >
+              Read More
+              <i class="button__icon material-icons">arrow_right_alt</i>
+            </a>
+          </div>
+          <div>
+            <div class="hero__overlay card">
+              <div class="card__image">
+                <img src="./src/images/photo1.png" alt="" />
+              </div>
+              <div class="card__overlay">
+                <div class="card__overlay__header">
+                  <img src="./src/images/photo2.png" alt="" />
+                  <div class="card__overlay__header__wrapper">
+                    <h4 class="font-sans">Aliza Webber</h4>
+                    <small class="font-semi-bold text-gray"
+                      >Interior Designer</small
+                    >
+                  </div>
+                </div>
+                <p class="heading--two font-serif mt-1">
+                  Designed in 2020 by Aliza Webber
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

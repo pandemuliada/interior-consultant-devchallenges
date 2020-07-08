@@ -124,7 +124,7 @@ a {
 }
 
 .card__overlay {
-  padding: 20px;
+  padding: 20px 30px;
   position: relative;
   margin-top: -100px;
   right: 20px;
@@ -162,6 +162,13 @@ a {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 576px) {
+  .nav {
+    padding: 50px 0;
+    margin-bottom: 50px;
+  }
+}
+
 .nav__container {
   display: flex;
   align-items: center;
@@ -174,6 +181,16 @@ a {
   border: 1px solid #ffffff;
   padding: 5px;
   margin-right: auto;
+}
+
+.nav__item {
+  color: #ffffff;
+  margin-left: 50px;
+  font-weight: lighter;
+}
+
+.nav__item.active {
+  font-weight: bold;
 }
 
 .nav__burger-button {
@@ -205,10 +222,27 @@ a {
 }
 
 .overlay-menu__item.active {
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .hero {
+  position: relative;
+}
+
+.hero__container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 576px) {
+  .hero__container {
+    grid-template-columns: 1fr 1.7fr;
+    column-gap: 50px;
+  }
+
+  .hero__container__first-child {
+    margin-top: 30px;
+  }
 }
 
 .hero__overlay {
